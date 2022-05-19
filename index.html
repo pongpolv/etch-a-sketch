@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Etch a Sketch</h1>
+
+    <div class="buttons">
+      <div class="grid-size-select-form">
+        <p id="grid-size">Input grid size between 1 to 100</p>
+        <div class="grid-size-form">
+          <input class="size-input" type="number" placeholder="1 - 100" />
+          <button class="submit-btn">submit</button>
+        </div>
+        <small class="wrong-input hidden">Wrong input!</small>
+      </div>
+      <div class="color-select-form">
+        <button class="color-btn black" data-set="black">BLACK</button>
+        <button class="color-btn rgb" data-set="rgb">RGB</button>
+        <button class="color-btn erase" data-set="erase">ERASER</button>
+      </div>
+    </div>
+    <button class="reset" data-set="reset">RESET 🚫</button>
+    <div class="container"></div>
+  </body>
+</html>
